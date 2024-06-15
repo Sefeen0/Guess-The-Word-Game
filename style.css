@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-user-select: none;
+  user-select: none;
+}
+body {
+  font-family: sans-serif;
+  font-weight: bold;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+input:focus {
+  outline: none;
+}
+.container {
+  margin: 5px;
+  box-shadow: white 0px 1px 2px 0px, white 0px 1px 3px 1px;
+  border: solid 2px white;
+  min-width: 700px;
+  min-height: 500px;
+}
+.container .head {
+  background-color: white;
+  padding: 15px 0;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.cont-game {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px 30px 15px;
+}
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-basis: 60%;
+}
+.game .tries {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+ .disabled {
+  opacity: 0.5;
+  cursor: not-allowed !important;
+}
+.game .try {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 5px;
+}
+
+.game .try .ch {
+  width: 50px;
+  height: 50px;
+  border: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.game .try span {
+  color: #a19e9e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.game .try .ch {
+  background-color: white;
+  border-bottom: 2px solid #a19e9e;
+  font-size: 50px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.game .btn {
+  width: 100%;
+}
+.game .btn .check {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.game .btn button:first-child,
+.game .btn button:last-child {
+  padding: 12px;
+  color: white;
+  border-radius: 5px;
+  display: block;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.game .btn button:first-child {
+  background-color: red;
+  flex-basis: 70%;
+  cursor: pointer;
+}
+.game .btn button:last-child {
+  background-color: #009688;
+  flex-basis: 25%;
+}
+.instructions {
+  flex-basis: 40%;
+  padding: 0 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.instructions h3 {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+.instructions .block {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+.instructions .block span {
+  width: 30px;
+  height: 25px;
+}
+.instructions .blue span {
+  background-color: #0075ff;
+}
+.instructions .orange span {
+  background-color: orange;
+}
+.instructions .red span {
+  background-color: red;
+}
+.instructions .block p {
+  font-size: 14px;
+}
+footer {
+  color: white;
+  text-align: center;
+  padding: 0 0 10px 0;
+}
+.tries .wrong {
+  background-color: red !important;
+  color: white;
+  border-bottom-color: red !important;
+}
+.not-in-place {
+  background-color: orange !important;
+  color: white;
+  border-bottom-color: orange !important;
+}
+.right {
+  background-color: #0075ff !important;
+  color: white;
+  border-bottom-color: #0075ff !important;
+}
+.white {
+  background-color: white;
+}
+.massage {
+  margin-top: 20px;
+  color: white;
+  font-size: 20px;
+}
+.massage span {
+  margin-top: 10px;
+  display: block;
+  text-align: center;
+  color: red;
+  font-size: 35px;
+}
+
